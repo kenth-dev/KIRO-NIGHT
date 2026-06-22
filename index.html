@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Kiro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #1a1a2e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Courier New', monospace;
+      overflow: hidden;
+    }
+
+    #game-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    canvas {
+      display: block;
+      border: 3px solid #2d3748;
+      border-radius: 4px;
+    }
+
+    #score-bar {
+      width: 480px;
+      background: #2d3748;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-size: 18px;
+      letter-spacing: 1px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-wrapper">
+    <canvas id="gameCanvas" width="480" height="640"></canvas>
+    <div id="score-bar">Score: 0 | High: 0</div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
